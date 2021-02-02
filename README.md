@@ -33,6 +33,7 @@
 * [ ] GameEngine
   * [ ] OpenGL
   * [ ] DirectX 
+* [X] All is annotated!
 
 # Installation
 
