@@ -145,12 +145,10 @@ Hide the window
 
 ### web
 
-Display a web site.
+Create a new Scene and display a web engine.
 
 |Parameter|Type|Description|
 |-|-|:-|
 |`url`|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The URL of the site|
-
-**Make sure to use `__dirname` before the path!**
 
 ***
