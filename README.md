@@ -15,8 +15,14 @@
   - [Window](#window)
     - [setTitle](#settitle)
     - [setIcon](#seticon)
+    - [setScene](#setscene)
+    - [setSize](#setsize)
+    - [autoSize](#autosize)
     - [display](#display)
     - [hide](#hide)
+    - [getMaximumHeight](#getmaximumheight)
+    - [getMaximumWidth](#getmaximumwidth)
+    - [web](#web)
 
 # Feature
 
@@ -94,6 +100,25 @@ Change the icon of the window.
 
 ***
 
+### setSize
+
+Changed the size (width and height) of the window.
+
+|Parameter|Type|Description|
+|-|-|:-|
+|`width`|[Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number)|The new width|
+|`height`|[Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number)|The new height|
+
+**Default Screen Size : `720x640`**
+
+***
+
+### autoSize
+
+Changed the size (width and height) of the window. Automatically by the ratio of the screen. Approximately 70% of the screen size.
+
+***
+
 ### display
 
 Display the window
@@ -103,5 +128,29 @@ Display the window
 ### hide
 
 Hide the window
+
+***
+
+### getMaximumHeight
+
+**@Returns** `{Number}` - the height of the screen.
+
+***
+
+### getMaximumWidth
+
+**@Returns** `{Number}` - the width of the screen.
+
+***
+
+### web
+
+Display a web site.
+
+|Parameter|Type|Description|
+|-|-|:-|
+|`url`|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The URL of the site|
+
+**Make sure to use `__dirname` before the path!**
 
 ***
