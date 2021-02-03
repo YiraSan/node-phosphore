@@ -35,9 +35,11 @@
   * [X] Make window
   * [X] Make scene
   * [ ] Make popup
-  * [ ] Label
+  * [ ] TextField
   * [X] Button
-  * [ ] Easy Customization
+  * [ ] CheckBox
+  * [ ] Hyperlink
+  * [ ] ProgressBar
 * [ ] Phosphore Builder
   * [ ] Make .exe (Windows)
   * [ ] Make .app (MacOS)
