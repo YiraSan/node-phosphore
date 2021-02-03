@@ -67,13 +67,14 @@ window.display() // Display the window... You can use .hide(), to hide the windo
 
 ## Window
 
-All function in Window Class explained.
+To make a new Window your need to call the class Window, and edit it then display.
+To edit the window your have many tools, to change the title, icon, size of it, etc...
 
 ***
 
 ### setTitle
 
-Change the title of a window.
+Change the title of the window.
 
 |Parameter|Type|Description|
 |-|-|:-|
@@ -83,17 +84,13 @@ Change the title of a window.
 
 ### setIcon
 
-```js
-// Create a new Window
-var window = new Window()
-
-// DIRNAME NEEDED
-window.setIcon(__dirname+"\\icon.png")
-``` 
+Change the icon of the window.
 
 |Parameter|Type|Description|
 |-|-|:-|
 |`path`|[Path](https://nodejs.org/api/path.html)|The path of the icon/image|
+
+**Make sure to use `__dirname` before the path!**
 
 ***
 
