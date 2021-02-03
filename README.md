@@ -23,6 +23,11 @@
     - [getMaximumHeight](#getmaximumheight)
     - [getMaximumWidth](#getmaximumwidth)
     - [web](#web)
+  - [Scene](#scene)
+    - [add](#add)
+  - [Button](#button)
+    - [setText](#settext)
+    - [onClick](#onclick)
 
 # Feature
 
@@ -150,6 +155,37 @@ Create a new Scene and display a web engine.
 |Parameter|Type|Description|
 |-|-|:-|
 |`url`|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The URL of the site|
+
+## Scene
+Scene are the content of your window. You can create scene as much you want.
+You can switch by an another scene in your window, and keep the last.
+
+### add 
+Add a new object in your scene.
+
+|Parameter|Type|Description|
+|-|-|:-|
+|`content`|[Button](#button)|An Phosphore Object|
+
+## Button
+A button is a button ;D
+
+### setText
+Change the text inside the button.
+
+|Parameter|Type|Description|
+|-|-|:-|
+|`text`|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The text you want|
+
+***
+
+### onClick
+EventHandler of click.
+
+|Parameter|Type|Description|
+|-|-|:-|
+|`func`|[Function](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Function)|The action to made on a new event|
+
 
 ***
 
