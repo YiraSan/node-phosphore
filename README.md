@@ -58,7 +58,7 @@ How to install ? That's the question ?!
 
 # Usage
 
-To correctly use Phosphore...
+To correct use Phosphore...
 
 ## Getting Started
 
@@ -74,7 +74,7 @@ window.display() // Display the window... You can use .hide(), to hide the windo
 ## Window
 
 To make a new Window your need to call the class Window, and edit it then display.
-To edit the window your have many tools, to change the title, icon, size of it, etc...
+To edit the window you have many tools, to change the title, icon, size of it, etc...
 
 ***
 
@@ -152,3 +152,5 @@ Create a new Scene and display a web engine.
 |`url`|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The URL of the site|
 
 ***
+
+Rayane Bakkali &copy; 2021
