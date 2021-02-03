@@ -33,9 +33,10 @@
 
 * [ ] Phosphore UI
   * [X] Make window
-  * [X] Make pop up
+  * [X] Make scene
+  * [ ] Make popup
   * [ ] Label
-  * [ ] Button
+  * [X] Button
   * [ ] Easy Customization
 * [ ] Phosphore Builder
   * [ ] Make .exe (Windows)
