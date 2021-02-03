@@ -185,7 +185,7 @@ EventHandler of click.
 
 |Parameter|Type|Description|
 |-|-|:-|
-|`func`|[Function](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Function)|The action to do when event|
+|`func`|[Function](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Function)|The function to run when a new event|
 
 
 ***
