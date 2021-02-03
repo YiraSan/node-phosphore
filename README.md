@@ -13,10 +13,10 @@
 - [Usage](#usage)
   - [Getting Started](#getting-started)
   - [Window](#window)
-   - [setTitle] (#settitle)
-   - [setIcon] (#seticon)
-   - [display] (#display)
-   - [hide] (#hide)
+    - [setTitle](#settitle)
+    - [setIcon](#seticon)
+    - [display](#display)
+    - [hide](#hide)
 
 # Feature
 
