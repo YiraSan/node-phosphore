@@ -28,7 +28,9 @@
 * [ ] WebEngine
   * [X] WebSite readable
   * [X] Dynamic web site supported
-  * [ ] Optimized WebEngine
+  * [ ] Optimized
+    * [X] Low Cpu-Usage
+    * [ ] Low Ram-Usage
   * [ ] Allow to input html directly without using web server
 * [ ] GameEngine
   * [ ] OpenGL
