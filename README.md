@@ -14,6 +14,9 @@
   - [Getting Started](#getting-started)
   - [Window](#window)
     - [setTitle] (#settitle)
+    - [setIcon] (#seticon)
+    - [display] (#display)
+    - [hide] (#hide)
 
 # Feature
 
@@ -64,31 +67,44 @@ window.display() // Display the window... You can use .hide(), to hide the windo
 
 ## Window
 
-All function in Window Class explain.
+All function in Window Class explained.
+
+***
 
 ### setTitle
 
-```js
-const { Window } = require('phosphore')
+Change the title of a window.
 
-// Create a new Window
-var window = new Window()
+|Parameter|Type|Description|
+|-|-|:-|
+|`title`|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The new title|
 
-window.setTitle("Your beautiful title")
-
-window.display() // Display the window... You can use .hide(), to hide the window.
-``` 
+***
 
 ### setIcon
 
 ```js
-const { Window } = require('phosphore')
-
 // Create a new Window
 var window = new Window()
 
 // DIRNAME NEEDED
 window.setIcon(__dirname+"\\icon.png")
-
-window.display() // Display the window... You can use .hide(), to hide the window.
 ``` 
+
+|Parameter|Type|Description|
+|-|-|:-|
+|`path`|[Path](https://nodejs.org/api/path.html)|The path of the icon/image|
+
+***
+
+### display
+
+Display the window
+
+***
+
+### hide
+
+Hide the window
+
+***
