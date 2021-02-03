@@ -109,7 +109,7 @@ Changed the size (width and height) of the window.
 |`width`|[Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number)|The new width|
 |`height`|[Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number)|The new height|
 
-**Default Screen Size : `720x640`**
+**Default Window Size : `720x640`**
 
 ***
 
