@@ -1,0 +1,30 @@
+{
+  "name": "phosphore",
+  "version": "0.0.1",
+  "description": "A fast, powerful and free library to create desktop apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "node example"
+  },
+  "keywords": [
+    "phosphor",
+    "phosphore",
+    "apps",
+    "desktop"
+  ],
+  "author": "YiraSan",
+  "license": "MIT",
+  "dependencies": {
+    "java": "^0.12.1",
+    "screenz": "^1.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YiraSan/phosphore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YiraSan/phosphore/issues"
+  },
+  "homepage": "https://github.com/YiraSan/phosphore#readme"
+}
