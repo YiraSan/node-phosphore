@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://cdn.cmtapp.fr/phosphore.png" height="300px"><br>
   <a href="https://www.npmjs.com/package/phosphore"><img src="https://img.shields.io/npm/v/phosphore?style=for-the-badge" alt="Version" /></a>  
-  <a href="https://www.npmjs.com/package/phosphore"><img src="https://img.shields.io/npm/dm/phosphore?style=for-the-badge" alt="Downloads" /></a><br>
+  <a href="https://www.npmjs.com/package/phosphore"><img src="https://img.shields.io/npm/dt/phosphore?style=for-the-badge" alt="Downloads" /></a><br>
   <a href="https://www.npmjs.com/package/phosphore"><img src="https://nodei.co/npm/phosphore.png?downloads=true&stars=true" alt="installInfo" /></a><br>
   A fast, powerful and free library to create desktop apps
 </div>
@@ -22,6 +22,10 @@
     - [getMaximumHeight](#getmaximumheight)
     - [getMaximumWidth](#getmaximumwidth)
     - [web](#web)
+    - [onClosing](#onclosing)
+    - [onReduce](#onreduce)
+    - [onMaximize](#onmaximize)
+    - [onFullScreenUpdate](#onfullscreenupdate)
   - [Scene](#scene)
     - [add](#add)
   - [Button](#button)
@@ -64,7 +68,7 @@ Change the title of the window.
 
 |Parameter|Type|Description|
 |-|-|:-|
-|`title`|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The new title|
+|title|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The new title|
 
 ***
 
@@ -74,7 +78,7 @@ Change the icon of the window.
 
 |Parameter|Type|Description|
 |-|-|:-|
-|`path`|[Path](https://nodejs.org/api/path.html)|The path of the icon/image|
+|path|[Path](https://nodejs.org/api/path.html)|The path of the icon/image|
 
 **Make sure to use `__dirname` before the path!**
 
@@ -86,7 +90,7 @@ Set the current scene of the window.
 
 |Parameter|Type|Description|
 |-|-|:-|
-|`scene`|[Scene](#scene)|The scene to display|
+|scene|[Scene](#scene)|The scene to display|
 
 ***
 
@@ -96,8 +100,8 @@ Changed the size (width and height) of the window.
 
 |Parameter|Type|Description|
 |-|-|:-|
-|`width`|[Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number)|The new width|
-|`height`|[Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number)|The new height|
+|width|[Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number)|The new width|
+|height|[Number](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Number)|The new height|
 
 **Default Window Size : `720x640`**
 
@@ -139,7 +143,7 @@ Create a new Scene and display a web engine.
 
 |Parameter|Type|Description|
 |-|-|:-|
-|`url`|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The URL of the site|
+|url|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The URL of the site|
 
 When you want to display your local file, using express :
 
@@ -153,6 +157,52 @@ app.listen(3490);
 var window = new Window().autoSize().web("http://localhost:3490/")
 ```
 
+***
+
+### onClosing
+
+Called when closing.
+
+|Parameter|Type|Description|
+|-|-|:-|
+|func|[Function](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Function)|The function runned when event is called|
+
+***
+
+### onReduce
+
+Called when iconified.
+
+|Parameter|Type|Description|
+|-|-|:-|
+|func|[Function](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Function)|The function runned when event is called|
+
+***
+
+### onMaximize
+
+Called when maximized.
+
+|Parameter|Type|Description|
+|-|-|:-|
+|func|[Function](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Function)|The function runned when event is called|
+
+***
+
+### onFullScreenUpdate
+
+Called when fullscreen state change.
+
+|Parameter|Type|Description|
+|-|-|:-|
+|func|[Function](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Function)|The function runned when event is called|
+
+**@Returns** `{Function}` :
+|Args|Type|Description|
+|-|-|:-|
+|oldValue|[Boolean](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Boolean)|The old value of `isFullscreen`|
+|newValue|[Boolean](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Boolean)|The new value of `isFullscreen`|
+
 ## Scene
 Scene are the content of your window. You can create scene as much you want.
 You can switch by an another scene in your window, and keep the last.
@@ -162,7 +212,7 @@ Add a new object in your scene.
 
 |Parameter|Type|Description|
 |-|-|:-|
-|`content`|[Button](#button)|An Phosphore Object|
+|content|[Button](#button)|An Phosphore Object|
 
 ## Button
 A button is a button ;D
@@ -172,7 +222,7 @@ Change the text inside the button.
 
 |Parameter|Type|Description|
 |-|-|:-|
-|`text`|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The text you want|
+|text|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The text you want|
 
 ***
 
@@ -181,7 +231,7 @@ EventHandler of click.
 
 |Parameter|Type|Description|
 |-|-|:-|
-|`func`|[Function](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Function)|The function to run when a new event|
+|func|[Function](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Function)|The function to run when a new event|
 
 
 ***
