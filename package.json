@@ -1,6 +1,6 @@
 {
   "name": "phosphore",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A fast, powerful and free library to create desktop apps",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
   "author": "YiraSan",
   "license": "MIT",
   "dependencies": {
-    "java": "^0.12.1",
+    "java": "^5.0.1",
     "screenz": "^1.0.0"
   },
   "devDependencies": {},

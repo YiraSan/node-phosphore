@@ -1,5 +1,5 @@
 // IMPORT
-const { JAVA, PROXYED_FUNCTION, RUN_LATER } = require('.')
+const { JAVA, BOOLEAN_PROXYED_FUNCTION, PROXYED_FUNCTION, RUN_LATER } = require('.')
 const { width, height }          = require('screenz')
 
 // FOR DOCS
@@ -107,6 +107,28 @@ module.exports = class Window {
      */
     web(url) {
         this.#window.displayWeb(url);
+        return this;
+    }
+
+    // EVENT
+
+    onClosing(func=()=>{}) {
+        RUN_LATER(()=>{this.#window.onClosing(PROXYED_FUNCTION(func))});
+        return this;
+    }
+
+    onReduce(func=()=>{}) {
+        RUN_LATER(()=>{this.#window.onReduce(PROXYED_FUNCTION(func))});
+        return this;
+    }
+
+    onMaximize(func=()=>{}) {
+        RUN_LATER(()=>{this.#window.onMaximize(PROXYED_FUNCTION(func))});
+        return this;
+    }
+
+    onFullScreenUpdate(func=(oldValue, newValue)=>{}) {
+        RUN_LATER(()=>{this.#window.onFullScreenUpdate(BOOLEAN_PROXYED_FUNCTION(func))});
         return this;
     }
 

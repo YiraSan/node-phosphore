@@ -11,10 +11,28 @@ function PROXYED_FUNCTION (func=()=>{}) {
     }
 }
 
+function BOOLEAN_PROXYED_FUNCTION (func=(oldValue, newValue)=>{}) {
+    if (typeof func != "function") return JAVA.newProxy('phosphore.utils.BooleanRunnable', {run: ()=>{}});
+    try {
+        return JAVA.newProxy('phosphore.utils.BooleanRunnable', {run: func});
+    } catch (error) {
+        throw error;
+    }
+}
+
+function INT_PROXYED_FUNCTION (func=(oldValue, newValue)=>{}) {
+    if (typeof func != "function") return JAVA.newProxy('phosphore.utils.IntRunnable', {run: ()=>{}});
+    try {
+        return JAVA.newProxy('phosphore.utils.IntRunnable', {run: func});
+    } catch (error) {
+        throw error;
+    }
+}
+
 function RUN_LATER (func=()=>{}) {
     setTimeout(()=>{
         func();
-    },2)
+    },3)
 }
 
-module.exports = { JAVA, PROXYED_FUNCTION, RUN_LATER }
+module.exports = { JAVA, BOOLEAN_PROXYED_FUNCTION, INT_PROXYED_FUNCTION, PROXYED_FUNCTION, RUN_LATER }
