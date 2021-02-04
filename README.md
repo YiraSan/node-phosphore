@@ -8,7 +8,6 @@
 
 # Contents Table
 
-- [Feature](#feature)
 - [Installation](#installation)
 - [Usage](#usage)
   - [Getting Started](#getting-started)
@@ -28,33 +27,6 @@
   - [Button](#button)
     - [setText](#settext)
     - [onClick](#onclick)
-
-# Feature
-
-* [ ] Phosphore UI
-  * [X] Make window
-  * [X] Make scene
-  * [ ] Make popup
-  * [ ] TextField
-  * [X] Button
-  * [ ] CheckBox
-  * [ ] Hyperlink
-  * [ ] ProgressBar
-* [ ] Phosphore Builder
-  * [ ] Make .exe (Windows)
-  * [ ] Make .app (MacOS)
-  * [ ] Easy Auto Update
-* [ ] WebEngine
-  * [X] WebSite readable
-  * [X] Dynamic web site supported
-  * [ ] Optimized
-    * [X] Low Cpu-Usage
-    * [ ] Low Ram-Usage
-  * [ ] Allow to input html directly without using web server
-* [ ] GameEngine
-  * [ ] OpenGL
-  * [ ] DirectX 
-* [X] All is annotated!
 
 # Installation
 
