@@ -80,6 +80,16 @@ Change the icon of the window.
 
 ***
 
+### setScene
+
+Set the current scene of the window.
+
+|Parameter|Type|Description|
+|-|-|:-|
+|`scene`|[Scene](#scene)|The scene to display|
+
+***
+
 ### setSize
 
 Changed the size (width and height) of the window.
@@ -130,6 +140,18 @@ Create a new Scene and display a web engine.
 |Parameter|Type|Description|
 |-|-|:-|
 |`url`|[String](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String)|The URL of the site|
+
+When you want to display your local file, using express :
+
+```js
+var { Window } = require("phosphore");
+var app = require("express")();
+
+app.use('/', express.static(__dirname + '/YOUR DIR HERE'));
+app.listen(3490);
+ 
+var window = new Window().autoSize().web("http://localhost:3490/")
+```
 
 ## Scene
 Scene are the content of your window. You can create scene as much you want.
